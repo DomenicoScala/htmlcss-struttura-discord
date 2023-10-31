@@ -33,6 +33,8 @@
     padding: 100px 0;
 }
 
+
+
  /*
 
    MAIN
@@ -86,6 +88,40 @@ main > section:nth-child(even){
 .box-green{
     background-color: green;
     min-height: 600px;
+    border: 2px dashed black;
+}
+
+.col-1-4{
+    width: calc((100% / 4) * 1);
+}
+
+.col-3-4{
+    width: calc((100% / 4) * 3);
+}
+
+
+ /*
+
+    FOOTER
+
+*/
+
+footer{
+    background-color: rgb(41, 41, 41);
+}
+
+.footer-top{
+    padding: 20px 0;
+}
+
+.footer-top hr{
+    margin-top: 20px;
+}
+
+.footer-bottom .sign-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
 
@@ -127,5 +163,29 @@ main > section:nth-child(even){
 }
 
 
+.debug .footer-top-main{
+    background-color: coral;
+}
 
+.debug .footer-top-main > *{
+    border: 1px dashed black;
+    min-height: 400px;
+}
 
+.debug .footer-top-secondary{
+    background-color: cadetblue;
+}
+
+.debug .footer-top-secondary > *{
+    border: 1px dashed rgb(255, 255, 255);
+    min-height: 400px;
+}
+
+.debug .footer-bottom .sign-container{
+    background-color: aquamarine;
+}
+
+.debug .sign-container > * {
+    background-color: pink;
+    border: 1px black dashed;
+}
